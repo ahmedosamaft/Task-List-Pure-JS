@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Taskes</title>
+    <style>
+      .task-parent {
+        background-color: #ececec;
+        display: flex;
+        width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 5px;
+      }
+      #task {
+        flex: 1;
+        margin: 0 20px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+      }
+      #add{
+        background-color: #47b3ff;
+      }
+
+      button {
+        background-color: tomato;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+      }
+      .added {
+        background-color: #ececec;
+        display: flex;
+        width: 600px;
+        padding: 20px;
+        margin: auto;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 5px;
+      }
+      .added .box {
+        margin: 0 20px;
+        display: flex;
+        border: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .added .box div {
+        background-color: white;
+
+        width: 80%;
+        margin: 0 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="task-parent">
+      <input type="text" id="task" />
+      <button id="add">Add Task</button>
+    </div>
+    <div class="added"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
